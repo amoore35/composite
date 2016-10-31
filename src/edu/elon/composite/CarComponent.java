@@ -22,4 +22,12 @@ public abstract class CarComponent {
 		throw new UnsupportedOperationException();
 	}
 	
+	public String getName() {
+		throw new UnsupportedOperationException();
+	}
+	
+	public String getDescription() {
+		throw new UnsupportedOperationException();
+	}
+	
 }
