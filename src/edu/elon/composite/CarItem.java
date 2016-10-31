@@ -12,14 +12,17 @@ public class CarItem extends CarComponent {
 		this.price = price;
 	}
 	
-	
-	
 	public double getPrice() {
 		return price;
 	}
 	
 	public void print() {
-		System.out.println(name);
+		if (price > 0.0) {
+			System.out.printf(name + "                " + description + "                $%.2f.%n", price);
+		} else {
+			System.out.println(name + "               " + description);
+		}
+		
 	}
 	
 	public String getName() {
