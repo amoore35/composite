@@ -10,7 +10,7 @@ public class Driver {
 	
 	public void print() {
 		allComponents.print();
-		System.out.printf("Total MSRP as built $%.2f.%n", allComponents.getPrice());
+		System.out.printf("%45s$%,.2f%n","Total MSRP as built ", allComponents.getPrice());
 	}
 
 }

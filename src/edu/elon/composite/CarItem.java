@@ -18,9 +18,12 @@ public class CarItem extends CarComponent {
 	
 	public void print() {
 		if (price > 0.0) {
-			System.out.printf(name + "                " + description + "                $%.2f.%n", price);
+			System.out.format("%-25s%-20s$%,.2f%n", name, description, price);
+			//System.out.println();
+			//System.out.printf(name + "                " + description + "                $%.2f.%n", price);
 		} else {
-			System.out.println(name + "               " + description);
+			//System.out.println(name + "               " + description);
+			System.out.format("%-25s%20s%n", name, description);
 		}
 		
 	}
